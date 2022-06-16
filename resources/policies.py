@@ -21,12 +21,11 @@ class policies:
                                                          description=config.get('policies_description'),
                                                          name=f"{config.get('policies_name')}",
                                                          statements=[
-                                                             f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to manage all-resources in compartment id {config.get('compartment_ocid')}",
-                                                            #  f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to manage instance-family in compartment id {config.get('compartment_ocid')}",
-                                                            #  f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to manage  all-resources in compartment id {config.get('compartment_ocid')}",
-                                                            # f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to use virtual-network-family in compartment id {config.get('compartment_ocid')}",
-                                                            # f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to read app-catalog-listing in compartment id {config.get('compartment_ocid')}",
-                                                            # f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to use volume-family in compartment id {config.get('compartment_ocid')}"
+                                                             f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to manage instance-family in compartment id {config.get('compartment_ocid')}",
+                                                             f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to manage  all-resources in compartment id {config.get('compartment_ocid')}",
+                                                             f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to use virtual-network-family in compartment id {config.get('compartment_ocid')}",
+                                                             f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to read app-catalog-listing in compartment id {config.get('compartment_ocid')}",
+                                                             f"Allow group {config.require('usergroup_name')}_{config.require('app_name_prefix')} to use volume-family in compartment id {config.get('compartment_ocid')}"
                                                          ],
                                                          )
             return pulumi_instance_policies
