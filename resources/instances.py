@@ -5,6 +5,7 @@ class instance:
     def create_instaces(self,config,node_subnet):
         try:
             get_ad_name = oci.identity.get_availability_domain(compartment_id=os.environ['TF_VAR_tenancy_ocid'],ad_number=1)
+            ssh_pub_key=open(config.require('path_ssh_pubkey'),"r").read()
             node_image = oci.core.get_images(compartment_id=config.get('compartment_ocid'),
                                              operating_system=config.get('instance_node_operating_system'),
                                              operating_system_version=config.get('instance_operating_system_version'),
@@ -64,7 +65,7 @@ class instance:
                                                      fault_domain="FAULT-DOMAIN-1",
 
                                                      metadata={
-                                                         "ssh_authorized_keys": config.require('ssh_pub_key'),
+                                                         "ssh_authorized_keys": ssh_pub_key,
                                                      },
                                                      shape=config.require('instance_node_shape'),
                                                      shape_config=oci.core.InstanceShapeConfigArgs(

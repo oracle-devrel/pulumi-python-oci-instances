@@ -29,9 +29,9 @@ config:
   pulumi-oci-python-instance:oci_agent_vulnerability: DISABLED
   pulumi-oci-python-instance:policies_description: pulumi instance policies
   pulumi-oci-python-instance:servicegateway_name: instance_servicegateway
-  pulumi-oci-python-instance:ssh_pub_key: ssh-rsa xxxxxx user@shell1
   pulumi-oci-python-instance:usergroup_description: pulumi user group
   pulumi-oci-python-instance:usergroup_name: pulumi_instance_ugrp
   pulumi-oci-python-instance:vcn_cidr_block: 10.0.0.0/16
   pulumi-oci-python-instance:vcn_display_name: pulumi_devops_vcn
   pulumi-oci-python-instance:vcn_dns_label: pulumidns
+    pulumi-oci-python-instance:path_ssh_pubkey: path.pub

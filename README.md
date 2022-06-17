@@ -82,7 +82,7 @@ cat "PATH TO PEMFILE " | pulumi config set oci:privateKey --secret
 - Set compartment_ocid and SSH Public key  as a config value.
 ```markdown
 pulumi config set compartment_ocid "OCID of your compartment"
-pulumi config set ssh_pub_key "SSH PUB KEY"
+pulumi config set path_ssh_pubkey "<Path to SSH Public key>" 
 ```
 - You may verify the values of your stack using the file `Pulumi.pulumi-oci-python-instance.yaml`
 - Re-run preview and validate the configuration `pulumi preview`
