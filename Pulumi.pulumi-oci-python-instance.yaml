@@ -1,0 +1,37 @@
+encryptionsalt: v1:Jl+SxzXzMi8=:v1:g5QngNFO3nfc7Qud:7v4BP1gjAtX6HYix/k9731pRbgHtfA==
+config:
+  pulumi-oci-python-instance:app_name_prefix: pulumi_instance
+  pulumi-oci-python-instance:compartment_ocid: ocid1.compartment.ocx..xxxx
+  pulumi-oci-python-instance:instance_bootvolume_size_gb: "50"
+  pulumi-oci-python-instance:instance_is_public_ip_enabled: "True"
+  pulumi-oci-python-instance:instance_name: oci_ol_instance_pulumi
+  pulumi-oci-python-instance:instance_node_memory_in_gbs: "16"
+  pulumi-oci-python-instance:instance_node_ocpus: "1"
+  pulumi-oci-python-instance:instance_node_operating_system: Oracle Linux
+  pulumi-oci-python-instance:instance_node_routetable_displayname: instance_node_routetable
+  pulumi-oci-python-instance:instance_node_seclist_name: instance_node_seclist
+  pulumi-oci-python-instance:instance_node_shape: VM.Standard.E4.Flex
+  pulumi-oci-python-instance:instance_nodepool_name: instance_nodepool_1
+  pulumi-oci-python-instance:instance_nodesubnet_cidr: 10.0.10.0/24
+  pulumi-oci-python-instance:instance_nodesubnet_displayname: instance_node_subnet
+  pulumi-oci-python-instance:instance_operating_system_version: "8"
+  pulumi-oci-python-instance:internetgateway_name: instance_internetgateway
+  pulumi-oci-python-instance:natgateway_name: instance_natgateway
+  pulumi-oci-python-instance:notification_description: oci_pulumi_topic
+  pulumi-oci-python-instance:oci_agent_bastion: DISABLED
+  pulumi-oci-python-instance:oci_agent_blkvolume: DISABLED
+  pulumi-oci-python-instance:oci_agent_comptinstance: ENABLED
+  pulumi-oci-python-instance:oci_agent_comptinstancemonitoring: ENABLED
+  pulumi-oci-python-instance:oci_agent_customlogs: ENABLED
+  pulumi-oci-python-instance:oci_agent_javamgmtsvc: DISABLED
+  pulumi-oci-python-instance:oci_agent_mgmt: DISABLED
+  pulumi-oci-python-instance:oci_agent_osmgmtsvc: ENABLED
+  pulumi-oci-python-instance:oci_agent_vulnerability: DISABLED
+  pulumi-oci-python-instance:policies_description: pulumi instance policies
+  pulumi-oci-python-instance:servicegateway_name: instance_servicegateway
+  pulumi-oci-python-instance:usergroup_description: pulumi user group
+  pulumi-oci-python-instance:usergroup_name: pulumi_instance_ugrp
+  pulumi-oci-python-instance:vcn_cidr_block: 10.0.0.0/16
+  pulumi-oci-python-instance:vcn_display_name: pulumi_devops_vcn
+  pulumi-oci-python-instance:vcn_dns_label: pulumidns
+    pulumi-oci-python-instance:path_ssh_pubkey: path.pub
