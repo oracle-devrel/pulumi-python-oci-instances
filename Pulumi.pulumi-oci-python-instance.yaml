@@ -34,4 +34,4 @@ config:
   pulumi-oci-python-instance:vcn_cidr_block: 10.0.0.0/16
   pulumi-oci-python-instance:vcn_display_name: pulumi_devops_vcn
   pulumi-oci-python-instance:vcn_dns_label: pulumidns
-    pulumi-oci-python-instance:path_ssh_pubkey: path.pub
+  pulumi-oci-python-instance:path_ssh_pubkey: path.pub
