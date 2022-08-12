@@ -12,7 +12,7 @@ Oracle Cloud Infrastructure Compute lets you provision and manage compute hosts,
 ## Prerequisites
 1. Download and install Pulumi CLI - https://www.pulumi.com/docs/get-started/install/
 2. If not installed , download and install Python3 (3.7 or later) - https://www.python.org/downloads/
-3. Oracle credentilas for Pulumi - https://www.pulumi.com/registry/packages/oci/installation-configuration/
+3. Oracle crdentials for Pulumi - https://www.pulumi.com/registry/packages/oci/installation-configuration/
 
 ## Optional Prerequisites
 
@@ -43,7 +43,7 @@ $ pulumi login file://pulumi-state-local
 
 ![](images/pulumi_local.png)
 
-- Create a new pulumi stack - `pulumi new https://github.com/RahulMR42/pulumi-python-oci-instances ` --force
+- Create a new pulumi stack - `pulumi new https://github.com/oracle-devrel/pulumi-python-oci-instances ` --force
 - Do not need to use `--force ` for login with Pulumi managed infra state mode.
 - When prompted use `pulumi-oci-python-instance` as the project name and use the default description.
 - Provide the stack name as `pulumi-oci-python-instance`
